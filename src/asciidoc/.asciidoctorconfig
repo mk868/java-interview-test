@@ -1,0 +1,5 @@
+
+:srcdir: ../test/java/mk/example
+:consoledir: ../../target/console
+// true by default
+:append-output: true

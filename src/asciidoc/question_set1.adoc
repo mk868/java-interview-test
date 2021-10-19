@@ -1,0 +1,54 @@
+include::.asciidoctorconfig[]
+
+What will be displayed on the console after invoking the `main()` method.
+
+// Nan == Nan
+
+.Input commands
+[source,java]
+-----
+include::{srcdir}/NanEqNanTest.java[tag=main]
+-----
+
+ifdef::append-output[]
+
+.Console Output
+----
+include::{consoledir}/NanEqNanTest.out[]
+----
+
+endif::[]
+
+// byte min & max
+
+.Input commands
+[source,java]
+-----
+include::{srcdir}/ByteMinMaxTest.java[tag=main]
+-----
+
+ifdef::append-output[]
+
+.Console Output
+----
+include::{consoledir}/ByteMinMaxTest.out[]
+----
+
+endif::[]
+
+// try finally
+
+.Input commands
+[source,java]
+-----
+include::{srcdir}/TryFinallyReturnTest.java[tag=main]
+-----
+
+ifdef::append-output[]
+
+.Console Output
+----
+include::{consoledir}/TryFinallyReturnTest.out[]
+----
+
+endif::[]

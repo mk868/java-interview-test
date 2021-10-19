@@ -1,0 +1,37 @@
+include::.asciidoctorconfig[]
+
+What will be displayed on the console after invoking the `main()` method.
+
+// inheritance
+
+.Input commands
+[source,java]
+-----
+include::{srcdir}/InheritanceTest.java[tag=main]
+-----
+
+ifdef::append-output[]
+
+.Console Output
+----
+include::{consoledir}/InheritanceTest.out[]
+----
+
+endif::[]
+
+// Integer Cache
+
+.Input commands
+[source,java]
+-----
+include::{srcdir}/IntegerCacheTest.java[tag=main]
+-----
+
+ifdef::append-output[]
+
+.Console Output
+----
+include::{consoledir}/IntegerCacheTest.out[]
+----
+
+endif::[]
