@@ -1,1 +1,49 @@
 = Java interview test
+
+The project is used to generate sheets with questions and answers to recruitment interviews.
+
+Two sets of outputs are generated
+
+- docs with questions
+- docs with questions and answers
+
+The questions contain java code snippets, answers are std output.
+The question and answer generation logic uses the JUnit framework -- code snippets with questions are basically parts of test classes.
+The std output from the tests are used to generate the output.
+
+== Input doc template files
+
+The source code of template documents are located in:
+
+[source]
+----
+src/asciidoc
+----
+
+Please check sample files:
+
+- question_set1.adoc
+- question_set2.adoc
+
+== How to build
+
+Just run maven `test` phase with command:
+
+[source]
+----
+mvn test
+----
+
+The output PDF files with questions will be produced in:
+
+[source]
+----
+target/generated-docs
+----
+
+The output PDF files with questions and answers (std output) will be produced in:
+
+[source]
+----
+target/generated-docs-with-answers
+----
